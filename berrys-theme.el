@@ -23,8 +23,8 @@
 
        (berrys01       "#FAFAFA")
        (berrys02       "#2C302E")
-       (berrys03       "#6A7C73")
-       (berrys04       "#F2F2F2")
+       (berrys03       "#646881")
+       (berrys04       "#E4E4E4")
 
        (berrys05       "#1098F7")
        (berrys06       "#B2EAFF")
@@ -101,7 +101,7 @@
    `(mode-line ((,class (:foreground ,berrys02 :background ,berrys04))))
    `(mode-line-buffer-id ((,class (:weight bold))))
    `(mode-line-highlight ((,class (:inherit highlight))))
-   `(mode-line-inactive ((,class (:foreground ,berrys02 :background ,berrys01))))
+   `(mode-line-inactive ((,class (:foreground ,berrys02 :background ,berrys01 :box (:color ,berrys04)))))
    `(outline-1 ((,class (:foreground ,berrys02 :weight bold))))
    `(outline-2 ((,class (:inherit outline-1))))
    `(outline-3 ((,class (:inherit outline-1))))
