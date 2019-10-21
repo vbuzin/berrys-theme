@@ -177,6 +177,7 @@
    `(helm-grep-match ((,class (:inherit isearch))))
    `(helm-header ((,class (:inherit helm-source-header :background ,berrys01))))
    `(helm-header-line-left-margin ((,class (:foreground ,berrys01 :background ,berrys09))))
+   `(helm-helper ((,class (:foreground ,berrys02))))
    `(helm-history-deleted ((,class (:foreground ,berrys01 :background ,berrys10))))
    `(helm-history-remote ((,class (:foreground ,berrys10))))
    `(helm-lisp-completion-info ((,class (:foreground ,berrys04 :weight bold))))
