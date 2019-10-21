@@ -55,7 +55,7 @@
    `(default ((,class (:foreground ,berrys02 :background ,berrys01))))
    `(error ((,class (:foreground ,berrys-error))))
    `(fixed-pitch-serif ((,class (:family unspecified))))
-   `(font-lock-builtin-face ((,class (:foreground ,berrys02))))
+   `(font-lock-builtin-face ((,class (:foreground ,berrys02 :weight bold))))
    `(font-lock-comment-face ((,class (:foreground ,berrys-comment :slant italic))))
    `(font-lock-comment-delimiter-face ((,class (:foreground ,berrys-comment :slant italic))))
    `(font-lock-constant-face ((,class (:foreground ,berrys02 :weight bold))))
