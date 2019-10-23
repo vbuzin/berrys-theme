@@ -145,6 +145,9 @@
    `(bm-persistent-face ((,class (:foreground ,berrys01 :background ,berrys05))))
    `(bm-fringe-persistent-face ((,class (:inherit bm-persistent-face))))
 
+   ;; => Flx
+   `(flx-highlight-face ((,class (:foreground ,berrys05 :weight bold))))
+
    ;; => Flycheck
    `(flycheck-error ((,class (:underline (:style wave :color ,berrys-error)))))
    `(flycheck-fringe-error ((,class (:foreground ,berrys-error :weight bold))))
@@ -195,6 +198,12 @@
    `(helm-separator ((,class (:foreground ,berrys02))))
    `(helm-visible-mark ((,class (:background ,berrys06))))
    `(helm-yas-key ((,class (:inherit helm-M-x-key))))
+
+   ;; => Ido
+   `(ido-indicator ((,class (:foreground ,berrys01 :background ,berrys10))))
+   `(ido-only-match ((,class (:foreground ,berrys05 :weight bold))))
+   `(ido-subdir ((,class (:foreground ,berrys02 :weight bold))))
+   `(ido-virtual ((,class (:foreground ,berrys-string :weight bold))))
 
    ;; => Indent guide
    `(indent-guide-face ((,class (:foreground ,berrys-comment))))
