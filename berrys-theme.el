@@ -208,6 +208,16 @@
    ;; => Indent guide
    `(indent-guide-face ((,class (:foreground ,berrys-comment))))
 
+   ;; => Ivy
+   `(ivy-confirm-face ((,class (:foreground ,berrys08 :weight bold))))
+   `(ivy-current-match ((,class (:inherit hl-line))))
+   `(ivy-cursor ((,class (:foreground ,berrys01 :background ,berrys02))))
+   `(ivy-match-required-face ((,class (:foreground ,berrys10 :weight bold))))
+   `(ivy-remote ((,class (:foreground ,berrys02 :underline t))))
+   `(ivy-minibuffer-match-face-2 ((,class (:foreground ,berrys05 :weight bold))))
+   `(ivy-minibuffer-match-face-3 ((,class (:inherit ivy-minibuffer-match-face-2 :underline t))))
+   `(ivy-minibuffer-match-face-4 ((,class (:inherit ivy-minibuffer-match-face-2 :box (:color ,berrys05)))))
+
    ;; => Markdown
    `(markdown-code-face ((,class (:family unspecified))))
    `(markdown-header-face ((,class (:foreground ,berrys02 :weight bold))))
