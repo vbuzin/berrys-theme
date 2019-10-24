@@ -125,6 +125,14 @@
    ;; => Ace jump
    `(ace-jump-face-foreground ((,class (:foreground ,berrys05 :weight bold))))
 
+   ;; => Anzu
+   `(anzu-match-1 ((,class (:foreground ,berrys05 :weight bold :box (:color ,berrys05)))))
+   `(anzu-match-2 ((,class (:foreground ,berrys01 :background ,berrys05 :weight bold :box (:color ,berrys05)))))
+   `(anzu-match-3 ((,class (:foreground ,berrys01 :background ,berrys03 :weight bold :box (:color ,berrys03)))))
+   `(anzu-mode-line ((,class (:foreground ,berrys02 :weight bold))))
+   `(anzu-mode-line-no-match ((,class (:foreground ,berrys10 :weight bold))))
+   `(anzu-replace-to ((,class (:foreground ,berrys-string :weight bold))))
+
    ;; => Company
    `(company-echo-common ((,class (:foreground ,berrys01 :background ,berrys10))))
    `(company-scrollbar-bg ((,class (:foreground ,berrys04 :background ,berrys04))))
