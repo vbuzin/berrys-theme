@@ -24,7 +24,7 @@
        (berrys01       "#FAFAFA")
        (berrys02       "#2C302E")
        (berrys03       "#646881")
-       (berrys04       "#E4E4E4")
+       (berrys04       "#E2E3E8")
 
        (berrys05       "#1098F7")
        (berrys06       "#B2EAFF")
