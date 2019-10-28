@@ -338,6 +338,11 @@
    `(org-warning ((,class (:foreground ,berrys09 :slant italic))))
    `(org-verbatim ((,class (:inherit default))))
 
+   ;; Org Pomodoro
+   `(org-pomodoro-mode-line ((,class (:foreground ,berrys05 :weight bold))))
+   `(org-pomodoro-mode-line-break ((,class (:foreground ,berrys08 :weight bold))))
+   `(org-pomodoro-mode-line-overtime ((,class (:foreground ,berrys-error :weight bold))))
+
    ;; => Which key
    `(which-key-key-face ((,class (:foreground ,berrys05 :weight bold))))
    ))
