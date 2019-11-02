@@ -1,4 +1,4 @@
-;;; berrys-theme.el -- A light, clean and elegant theme
+;;; berrys-theme.el --- A light, clean and elegant theme -*- lexical-binding: t; -*-
 
 ;; Copyright © 2019-present Slava Buzin
 
@@ -7,13 +7,15 @@
 ;; Version: 0.1.0
 ;; URL: https://github.com/vbuzin/berrys-theme
 ;; Author: Slava Buzin <v8v.buzin@gmail.com>
-;; Package-Requires: ((emacs "24"))
+;; Package-Requires: ((emacs "24.1"))
 ;; License: MIT
 
-;;; Code:
+;;; Commentary:
 
-(unless (>= emacs-major-version 24)
-  (error "Berrys theme requires Emacs 24 or later!"))
+;; Berrys is a 16 colorspace theme build to run in GUI mode
+;; with support for some third-party syntax- and UI packages.
+
+;;; Code:
 
 (deftheme berrys "A light, clean and elegant theme")
 
@@ -344,15 +346,14 @@
    `(org-pomodoro-mode-line-overtime ((,class (:foreground ,berrys-error :weight bold))))
 
    ;; => Which key
-   `(which-key-key-face ((,class (:foreground ,berrys05 :weight bold))))
-   ))
+   `(which-key-key-face ((,class (:foreground ,berrys05 :weight bold))))))
 
 ;;;###autoload
 (when (and (boundp 'custom-theme-load-path) load-file-name)
   (add-to-list 'custom-theme-load-path
                (file-name-as-directory (file-name-directory load-file-name))))
 
-(provide-theme 'berrys)
+(provide 'berrys-theme)
 
 ;; Local Variables:
 ;; no-byte-compile: t
