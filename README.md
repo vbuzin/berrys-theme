@@ -1,3 +1,5 @@
+<p align="center"><a href="https://melpa.org/#/berrys-theme"><img alt="MELPA" src="https://melpa.org/packages/berrys-theme-badge.svg"/></a></p>
+
 # Berrys
 
 > A light, clean and elegant theme for [Emacs](https://www.gnu.org/software/emacs/).
