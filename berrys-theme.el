@@ -12,7 +12,7 @@
 
 ;;; Commentary:
 
-;; Berrys is a 16 colorspace theme build to run in GUI mode
+;; Berrys is a 9 colorspace theme build to run in GUI mode
 ;; with support for some third-party syntax- and UI packages.
 
 ;;; Code:
@@ -100,6 +100,18 @@
    `(link ((,class (:underline t))))
    `(link-visited ((,class (:underline t))))
    `(match ((,class (:inherit isearch))))
+
+   `(message-cited-text ((,class (:inherit font-lock-comment-face))))
+   `(message-header-cc ((,class (:foreground ,berrys-string))))
+   `(message-header-name ((,class (:foreground ,berrys-string))))
+   `(message-header-newsgroups ((,class (:foreground ,berrys-string :slant italic :weight bold))))
+   `(message-header-other ((,class (:foreground ,berrys-string))))
+   `(message-header-subject ((,class (:foreground ,berrys-string))))
+   `(message-header-to ((,class (:foreground ,berrys-string))))
+   `(message-header-xheader ((,class (:foreground ,berrys-string))))
+   `(message-mml ((,class (:foreground ,berrys-string))))
+   `(message-separator ((,class (:inherit font-lock-comment-face))))
+
    `(minibuffer-prompt ((,class (:foreground ,berrys02 :weight bold))))
    `(mode-line ((,class (:foreground ,berrys02 :background ,berrys04))))
    `(mode-line-buffer-id ((,class (:weight bold))))
@@ -165,6 +177,12 @@
    `(flycheck-fringe-warning ((,class (:foreground ,berrys-warning :weight bold))))
    `(flycheck-info ((,class (:underline (:style wave :color ,berrys05)))))
    `(flycheck-warning ((,class (:underline (:style wave :color ,berrys-warning)))))
+
+    ;; => Gnus
+   `(gnus-header-content ((,class (:foreground ,berrys-string :italic t))))
+   `(gnus-header-from ((,class (:foreground ,berrys-string))))
+   `(gnus-header-name ((,class (:foreground ,berrys-string :weight bold))))
+   `(gnus-header-subject ((,class (:foreground ,berrys-string))))
 
    ;; => Haskell-mode
    `(haskell-error-face ((,class (:underline (:style wave :color ,berrys-error)))))
@@ -293,6 +311,21 @@
    `(magit-signature-revoked ((,class (:foreground ,berrys10))))
    `(magit-signature-untrusted ((,class (:foreground ,berrys10))))
    `(magit-tag ((,class (:foreground ,berrys05))))
+
+   ;; => Mu4e
+   `(mu4e-attach-number-face ((,class (:foreground ,berrys05))))
+   `(mu4e-contact-face ((,class (:foreground ,berrys-string :slant italic))))
+   `(mu4e-context-face ((,class (:foreground ,berrys-string))))
+   `(mu4e-flagged-face ((,class (:foreground ,berrys05))))
+   `(mu4e-header-face ((,class (:foreground ,berrys02))))
+   `(mu4e-header-highlight-face ((,class (:inherit highlight))))
+   `(mu4e-header-key-face ((,class (:foreground ,berrys-string :weight bold))))
+   `(mu4e-header-marks-face ((,class (:foreground ,berrys05 :weight bold))))
+   `(mu4e-header-value-face ((,class (:foreground ,berrys-string :slant italic))))
+   `(mu4e-highlight-face ((,class (:foreground ,berrys05))))
+   `(mu4e-special-header-value-face ((,class (:foreground ,berrys-string :slant italic))))
+   `(mu4e-region-code ((,class (:box (:color ,berrys05)))))
+   `(mu4e-url-number-face ((,class (:foreground ,berrys05))))
 
    ;; => Org mode
    `(org-agenda-date ((,class (:foreground ,berrys02))))
