@@ -92,7 +92,7 @@
    `(hl-line ((,class (:background ,berrys04))))
    `(info-node ((,class (:foreground ,berrys05 :weight bold))))
    `(info-menu-header ((,class (:foreground ,berrys02 :weight bold))))
-   `(info-menu-star ((,class (:foreground ,berrys10))))
+   `(info-menu-star ((,class (:foreground ,berrys05))))
    `(info-title-4 ((,class (:foreground ,berrys02 :weight bold))))
    `(isearch ((,class (:foreground ,berrys05 :weight bold))))
    `(isearch-fail ((,class (:foreground ,berrys01 :background ,berrys-error))))
@@ -316,7 +316,7 @@
    `(mu4e-attach-number-face ((,class (:foreground ,berrys05))))
    `(mu4e-contact-face ((,class (:foreground ,berrys-string :slant italic))))
    `(mu4e-context-face ((,class (:foreground ,berrys-string))))
-   `(mu4e-flagged-face ((,class (:foreground ,berrys05))))
+   `(mu4e-flagged-face ((,class (:foreground ,berrys09))))
    `(mu4e-header-face ((,class (:foreground ,berrys02))))
    `(mu4e-header-highlight-face ((,class (:inherit highlight))))
    `(mu4e-header-key-face ((,class (:foreground ,berrys-string :weight bold))))
@@ -325,6 +325,7 @@
    `(mu4e-highlight-face ((,class (:foreground ,berrys05))))
    `(mu4e-special-header-value-face ((,class (:foreground ,berrys-string :slant italic))))
    `(mu4e-region-code ((,class (:box (:color ,berrys05)))))
+   `(mu4e-replied-face ((,class :slant italic)))
    `(mu4e-url-number-face ((,class (:foreground ,berrys05))))
 
    ;; => Org mode
