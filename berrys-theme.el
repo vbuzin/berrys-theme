@@ -25,17 +25,16 @@
                   (berrys-red     "#e36a5b" "#B80C09" "red")
                   (berrys-green   "#00AC00" "#00AC00" "green")
                   (berrys-yellow  "#D89800" "#D89800" "yellow")
-                  (berrys-blue    "#40ADF9" "#1098F7" "blue")
-                  (berrys-purple  "#C678DD" "#C678DD" "magenta")
-                  (berrys-fg      "#E1E1E1" "#282A34" "white")
+                  (berrys-blue    "#1098F7" "#005EE1" "blue")
+                  (berrys-purple  "#FF00EB" "#C678DD" "magenta")
                   (berrys-cyan    "#07BEB8" "#07BEB8" "brightcyan")
+                  (berrys-fg      "#E0E0E0" "#282A34" "white")
 
-                  (berrys-comment "#A2A4B3" "#646881" "gray")        ; comment
-                  (berrys-current "#C1C3CD" "#C1C3CD" "brightblack") ; current-line/selection
+                  (berrys-comment "#A8AABC" "#646881" "unspecified")        ; comment
+                  (berrys-current "#D2D6F2" "#D2D6F2" "brightblack") ; current-line/selection
 
                   ;; shades
-                  (berrys-fg1     "#FAFAFA" "#282A34" "unspecified")
-                  (berrys-fg2     "#C1C3CD" "#505367" "unspecified")
+                  (berrys-fg1     "white" "black" "unspecified")
 
 
                   ))
@@ -46,13 +45,15 @@
                   (default :background ,berrys-bg :foreground ,berrys-fg)
                   (error :foreground ,berrys-red :weight bold)
                   (fixed-pitch-serif :family unspecified)
-                  (font-lock-builtin-face :foreground ,berrys-fg2 :weight semi-bold)
+                  (font-lock-function-name-face :foreground ,berrys-blue :weight bold)
+                  (font-lock-builtin-face :foreground ,berrys-fg1 :weight bold)
                   (font-lock-comment-face :foreground ,berrys-comment :slant italic)
                   (font-lock-comment-delimiter-face :foreground ,berrys-comment :slant italic)
-                  (font-lock-constant-face :foreground ,berrys-fg :weight bold)
+                  (font-lock-constant-face :foreground ,berrys-fg)
+
+
                   (font-lock-doc-face :inherit font-lock-comment-face)
-                  (font-lock-function-name-face :foreground ,berrys-blue :weight bold)
-                  (font-lock-keyword-face :foreground ,berrys-fg1 :weight extra-bold)
+                  (font-lock-keyword-face :foreground ,berrys-fg :weight extra-bold)
                   (font-lock-string-face :foreground ,berrys-comment)
                   (font-lock-type-face :foreground ,berrys-fg1 :slant italic)
                   (font-lock-variable-name-face :foreground ,berrys-cyan)
